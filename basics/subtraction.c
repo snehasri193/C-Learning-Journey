@@ -1,11 +1,18 @@
 #include <stdio.h>
 
-int main()
-{
-   int var1 = 10;
-   int var2 = 3;
-   int sub = var1 - var2;
-   printf("%d-%d= %d", var1,var2,sub);
- 
-   return 0;
+int subtract(int a, int b) {
+    return a - b;
 }
+
+int main() {
+    int x, y;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &x, &y);
+
+    printf("%d - %d = %d\n", x, y, subtract(x, y));
+
+    return 0;
+}
+
+
